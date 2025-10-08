@@ -1,21 +1,70 @@
----
-import Layout from '../layouts/Layout.astro';
-import ContextAlert from '../components/ContextAlert.astro';
-import Markdown from '../components/Markdown.astro';
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VTuber Model vs PNGTuber — Which Is Right For You?</title>
+  <meta name="description" content="Compare VTuber models and PNGTubers: pros, cons, use cases, and how customizable VTuber models and PNGTuber commissions can help you launch your virtual persona." />
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6; color:#222; padding:28px; max-width:900px; margin:0 auto; }
+    h1,h2 { color:#0b4a6f; }
+    a { color:#0a66c2; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .lead { color:#444; }
+    .compare { display:flex; gap:20px; flex-wrap:wrap; margin:18px 0; }
+    .card { flex:1 1 280px; background:#f7f9fb; border:1px solid #e3eef6; padding:14px; border-radius:8px; box-shadow:0 2px 6px rgba(10,30,40,0.04); }
+    ul { margin:8px 0 16px 20px; }
+    footer { margin-top:28px; color:#666; font-size:0.95rem; }
+  </style>
+</head>
+<body>
 
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
+  <h1>VTuber Model vs PNGTuber — Which Fits Your Channel?</h1>
 
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
----
+  <p class="lead">If you’re starting a virtual channel or evolving an online persona, you’ll quickly encounter two common approaches: the full-featured <strong>VTuber model</strong> and the lightweight <strong>PNGTuber</strong>. Both let you stream as a character instead of your real self, but they solve different problems. This guide compares the two, explains when to choose each, and links to services that can get you started fast.</p>
 
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
-</Layout>
+  <h2>What is a VTuber model?</h2>
+  <p>A VTuber model (learn more about the concept on <a href="https://en.wikipedia.org/wiki/VTuber" target="_blank" rel="noopener noreferrer">Wikipedia</a>) is usually a rigged 2D or 3D avatar that mirrors your face and movements in real time. Live2D (2D rigs) and fully sculpted 3D models allow fluid expressions, head turns, and often full-body motion. VTuber models are ideal for creators who want expressive performance, advanced animations, and a polished brand look. If you need a tailored solution, explore <a href="https://vtubermodels.com/customizable-vtuber-models/" target="_blank" rel="noopener noreferrer">customizable VTuber models</a> that grow with your channel.</p>
+
+  <h2>What is a PNGTuber?</h2>
+  <p>A PNGTuber uses static PNG images that swap between states — for example, idle, talking, and bonus expressions. This approach is fast, affordable, and reliable on low-end hardware. It’s perfect for beginners, side projects, or creators testing an avatar concept before investing in a full rig. If you want a straightforward entry point, check out dedicated pages for <a href="https://vtubermodels.com/pngtuber/" target="_blank" rel="noopener noreferrer">PNGTuber</a> info and <a href="https://vtubermodels.com/pngtuber-commissions/" target="_blank" rel="noopener noreferrer">PNGTuber Commissions</a>.</p>
+
+  <div class="compare">
+    <div class="card">
+      <h3>PNGTuber — Quick & Budget-Friendly</h3>
+      <ul>
+        <li>Cost-effective (art + a few states)</li>
+        <li>Minimal setup — microphone triggers image swaps</li>
+        <li>Low CPU/GPU usage — works on most laptops</li>
+        <li>Great for testing character ideas</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>VTuber Model — Expressive & Professional</h3>
+      <ul>
+        <li>Rich animation (Live2D or 3D)</li>
+        <li>Facial tracking and body movement</li>
+        <li>Better for long-term branding and merch</li>
+        <li>Higher cost and technical setup</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>How to choose: starter → advanced guidelines</h2>
+
+  <p><strong>Starter (try a PNGTuber)</strong>: If you’re new, unpredictable about schedule, or on a tight budget, a PNGTuber gets you streaming fast. Commission a small pack (idle + talking + 2 expressions) and use simple tools to map sound to images.</p>
+
+  <p><strong>Intermediate (move to Live2D)</strong>: Once you have regular content, upgrade to a Live2D model for smoother expressions and a more professional look. Work with an artist to get layered files so future upgrades are easier.</p>
+
+  <p><strong>Advanced (3D & full VTuber production)</strong>: For performers, event hosts, and creators who plan to monetize heavily, invest in a 3D model with full-body tracking and motion capture. You’ll gain the most flexibility for animations, dances, and VR appearances — and you can always reuse artwork from earlier PNG or Live2D builds.</p>
+
+  <h2>Services & next steps</h2>
+  <p>If you want premade or commissioned options, these pages are a good starting point: <a href="https://vtubermodels.com/vtuber-model-commissions/" target="_blank" rel="noopener noreferrer">VTuber Model Commissions</a> for bespoke rigs, and <a href="https://vtubermodels.com/vrchat-avatar-commissions/" target="_blank" rel="noopener noreferrer">VRChat Avatar Commissions</a> if you plan to appear in virtual worlds as well.</p>
+
+  <footer>
+    <p>Choosing between a PNGTuber and a VTuber model is about tradeoffs: speed and simplicity versus expression and investment. Start where it makes sense for your goals, keep your source files organized, and plan an upgrade path so your avatar can grow with your channel.</p>
+  </footer>
+
+</body>
+</html>
